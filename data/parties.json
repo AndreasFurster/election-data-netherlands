@@ -1,0 +1,192 @@
+[
+  {
+    "key": 0,
+    "label": "VVD",
+    "color": "#d741a7"
+  },
+  {
+    "key": 1,
+    "label": "PVV",
+    "color": "#3a1772"
+  },
+  {
+    "key": 2,
+    "label": "CDA",
+    "color": "#5398be"
+  },
+  {
+    "key": 3,
+    "label": "D66",
+    "color": "#f2cd5d"
+  },
+  {
+    "key": 4,
+    "label": "GL",
+    "color": "#dea54b"
+  },
+  {
+    "key": 5,
+    "label": "SP",
+    "color": "#dcd6f7"
+  },
+  {
+    "key": 6,
+    "label": "PVDA",
+    "color": "#a6b1e1"
+  },
+  {
+    "key": 7,
+    "label": "CU",
+    "color": "#b4869f"
+  },
+  {
+    "key": 8,
+    "label": "PVDD",
+    "color": "#985f6f"
+  },
+  {
+    "key": 9,
+    "label": "50PLUS",
+    "color": "#4e4c67"
+  },
+  {
+    "key": 10,
+    "label": "SGP",
+    "color": "#124e78"
+  },
+  {
+    "key": 11,
+    "label": "DENK",
+    "color": "#f0f0c9"
+  },
+  {
+    "key": 12,
+    "label": "FVD",
+    "color": "#f2bb05"
+  },
+  {
+    "key": 13,
+    "label": "BIJ1",
+    "color": "#d74e09"
+  },
+  {
+    "key": 14,
+    "label": "JA21",
+    "color": "#6e0e0a"
+  },
+  {
+    "key": 15,
+    "label": "COORANJE",
+    "color": "#e56399"
+  },
+  {
+    "key": 16,
+    "label": "VOLT",
+    "color": "#d3a588"
+  },
+  {
+    "key": 17,
+    "label": "NIDA",
+    "color": "#ece2d0"
+  },
+  {
+    "key": 18,
+    "label": "PIRATEN",
+    "color": "#7fd1b9"
+  },
+  {
+    "key": 19,
+    "label": "LIBERP",
+    "color": "#7a6563"
+  },
+  {
+    "key": 20,
+    "label": "JONG",
+    "color": "#edd2e0"
+  },
+  {
+    "key": 21,
+    "label": "SPLINTER",
+    "color": "#edbbb4"
+  },
+  {
+    "key": 22,
+    "label": "BBB",
+    "color": "#dbabbe"
+  },
+  {
+    "key": 23,
+    "label": "NLBETER",
+    "color": "#baa1a7"
+  },
+  {
+    "key": 24,
+    "label": "HENKKROL",
+    "color": "#797b84"
+  },
+  {
+    "key": 25,
+    "label": "OPRECHT",
+    "color": "#f46036"
+  },
+  {
+    "key": 26,
+    "label": "JEZUSLFT",
+    "color": "#5b85aa"
+  },
+  {
+    "key": 27,
+    "label": "TROTS",
+    "color": "#414770"
+  },
+  {
+    "key": 28,
+    "label": "UBUNTU",
+    "color": "#372248"
+  },
+  {
+    "key": 29,
+    "label": "BLANCOZV",
+    "color": "#171123"
+  },
+  {
+    "key": 30,
+    "label": "PVDE",
+    "color": "#dcd6f7"
+  },
+  {
+    "key": 31,
+    "label": "DFP",
+    "color": "#a6b1e1"
+  },
+  {
+    "key": 32,
+    "label": "VSN",
+    "color": "#b4869f"
+  },
+  {
+    "key": 33,
+    "label": "WIJZNL",
+    "color": "#985f6f"
+  },
+  {
+    "key": 34,
+    "label": "MODERNNL",
+    "color": "#4e4c67"
+  },
+  {
+    "key": 35,
+    "label": "GROENEN",
+    "color": "#124e78"
+  },
+  {
+    "key": 36,
+    "label": "PVDR",
+    "color": "#f0f0c9"
+  },
+  {
+    "key": 37,
+    "label": "OVERIG",
+    "color": "#f2bb05"
+  }
+]

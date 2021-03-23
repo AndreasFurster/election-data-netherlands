@@ -10,7 +10,7 @@ const municipalityUrl = (key) => `https://d2vz64kg7un9ye.cloudfront.net/data/${k
 
 console.log(`Getting parties & municipalities`);
 (async function() {
-    const { parties, municipalities } = await getPartiesAndMunicipalities();
+    const { municipalities } = await getPartiesAndMunicipalities();
     console.log(`Getting voting results of ${municipalities.length} municipalities`);
 
     let result = [];
@@ -18,12 +18,12 @@ console.log(`Getting parties & municipalities`);
     for (let i = 0; i < municipalities.length; i++) {
         const municipality = municipalities[i];
         
-        const votes = await getVotes(municipality.key, parties);
+        // Skip if not municipality (but national or province)
+        if(municipality.type !== 0) continue;
 
-        result.push({
-            ...municipality,
-            ...votes
-        })
+        const votes = await getVotes(municipality);
+
+        result = [ ...result, ...votes ]
 
         console.log(`[${i}/${municipalities.length}]: ${municipality.label}`);
         // break;
@@ -36,30 +36,28 @@ console.log(`Getting parties & municipalities`);
 async function getPartiesAndMunicipalities() {
     const data = (await axios.get(partiesUrl)).data;
     return {
-        parties: data.parties,
         municipalities: data.views
     }
 }
 
-async function getVotes(key, parties) {
-    const data = (await axios.get(municipalityUrl(key))).data
+async function getVotes(municipality) {
+    const { key: municipalityKey, parties, cbsCode, ...municipalityData } = (await axios.get(municipalityUrl(municipality.key))).data
+
+    const realCbsCode = `GM${cbsCode}`
 
     let spreadedData = []
-    for (let i = 0; i < data.parties.length; i++) {
-        const { key, results } = data.parties[i];
-
-        const partyData = parties.find(p => p.key === key);
+    for (let i = 0; i < parties.length; i++) {
+        const { key: partyKey, results } = parties[i];
 
         spreadedData.push({
-            key,
+            cbsCode: realCbsCode,
+            municipalityKey,
+            partyKey,
+            ...municipalityData,
             ...results,
-            ...partyData
         })
     }
 
-    return {
-        ...data,
-        parties: spreadedData
-    }
+    return spreadedData
 }
 
